@@ -1,11 +1,15 @@
-import boardgame.Position;
+package app;
+
+import boardgame.Board;
+import chess.ChessMatch;
 
 public class Program {
     public static void main(String[] args) throws Exception {
 
-        Position p1 = new Position(1,2);
+        ChessMatch chessMatch = new ChessMatch();
 
-        System.out.println(p1);
+        UI.printBoard(chessMatch.getPieces());
+        
 
 
     }
